@@ -87,3 +87,9 @@ body{
     height: 30vh; /* Adjust the height as needed */
     flex-shrink: 0; /* Prevent image from shrinking */
 }
+
+@media screen and (max-width: 800px){
+    body{
+        margin-top: 4em;
+    }
+}
