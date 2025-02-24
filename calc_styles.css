@@ -1,0 +1,133 @@
+/* General Reset */
+body, h1, h2, h3, p, label, select, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    background: url('images/stars.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00bfff; /* NASA Blue */
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin: 0.5rem 0;
+}
+
+header h3 {
+    font-size: 1rem;
+    font-style: italic;
+    color: #999999;
+}
+
+/* Main Content */
+main {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #00bfff;
+}
+
+input, select, button {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #00bfff;
+    background: #111111;
+    color: #ffffff;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+button {
+    background: #00bfff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #007acc;
+}
+
+/* Result Styling */
+#result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+}
+
+
+/*navbar stuff*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    z-index: 99;
+}
+  
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background: #ddddddb6;
+    color: black;
+}
+
+.navbar img{
+    height: 48px;
+    width: 62px;
+    right: auto;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc_styles.css">
+    <link rel="icon" type="images/x-icon" href="images/hunch_fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Solar Systemic Calendar</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+    <nav class="navbar">
+        <a href="index.html">Intro</a>
+        <a href="calc.html">Calculator</a>
+        <a href="planets.html">Planets</a>
+        <a href="moons.html">Moons</a>
+        <a href="aster.html">Asteroids</a>
+        <a href="Team.html">Hunch Team</a>
+        <img src="images/hunch_logo.png" alt="Hunch_Logo">
+    </nav>
+
+    <header>
+        <h1><u>Solar Systemic Time</u></h1>
+        <p>The Solar Systemic Time is a time calculator across the solar system.</p>
+        <h3>Input accurate time to calculate the systemic time for different planets and moons.</h3>
+    </header>
+
+    <hr><br>
+
+    <main>
+        <div>
+            <label for="date_pick">Enter the date: </label>
+            <input type="date" id="date_pick">
+            <br>
+            <label for="time1">Enter the time: </label>
+            <input type="time" id="time1">
+            <br><br>
+        </div>
+        <div>
+            <label for="planet">Select a planet: </label>
+            <select id="planet">
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+                <option value="None">None</option>
+            </select>
+            <br>
+            <label for="moons" id="moons_label">Select a moon (if applicable): </label>
+            <select id="earth_moon">
+                <option value="The_Moon">The Moon</option>
+                <option value="None">None</option>
+            </select>
+            <select id="mars_moon" hidden>
+                <option value="Deimos">Deimos</option>
+                <option value="Phobos">Phobos</option>
+                <option value="None">None</option>
+            </select>
+            <select id="jup_moon" hidden>
+                <option value="Ganymede">Ganymede</option>
+                <option value="Callisto">Callisto</option>
+                <option value="Io">Io</option>
+                <option value="None">None</option>
+            </select>
+            <select id="sat_moon" hidden>
+                <option value="Titan">Titan</option>
+                <option value="Hyperion">Hyperion</option>
+                <option value="None">None</option>
+            </select>
+            <label for="aster" id="aster_label" style="display: none;">Asteroids:</label>
+            <select id="aster" style="display: none;">
+                <option value="Ceres">Ceres</option>
+                <option value="Pallas">Pallas</option>
+                <option value="Vesta">Vesta</option>
+                <option value="Bennu">Bennu</option>
+            </select>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+    </main>
+</body>
+</html>

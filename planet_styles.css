@@ -1,0 +1,66 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    width: 100%;
+    z-index: 99;
+}
+  
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background: #ddddddb6;
+    color: black;
+}
+
+main{
+    margin-top: 4em;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    color: #f2f2f2; /*testing text color*/
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.navbar img{
+    height: 48px;
+    width: 62px;
+    right: auto;
+}
+
+body{
+    background-image: url(images/stars.jpg);
+}
+
+main img{
+    width: auto;
+    height: 40vh;
+    float: inline-start;
+}
+
+.text{
+    padding: 4em;
+    margin-bottom: 10em;
+    font-size: large;
+}
+
+.text ul{
+    list-style-type: none;
+}
+
+.foot{
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+}
